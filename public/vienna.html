@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Incluir folha de estilo de fontes de ícone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Ticket - Vienna</title>
+</head>
+<body id="app">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><span class="title">Ticket</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="navbar-nav menu">
+                    <a href="home.html"><button class="btn-home" type="button"><i class="bi bi-house-door-fill fs-4"></i></button></a>
+
+                  <li class="nav-item dropdown">
+                    <a class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list-ul fs-5 "></i>
+                    </a>
+                    <ul class="dropdown-menu artigo">
+                        <li><a class="dropdown-item" href="toquio.html">Tóquio</a></li>
+                        <li><a class="dropdown-item" href="chroma.html">Chroma</a></li>
+                        <li><a class="dropdown-item" href="scala.html">Scala</a></li>
+                        <li><a class="dropdown-item" href="pisos.html">Pisos</a></li>
+                        <li><a class="dropdown-item" href="vienna.html">Vienna</a></li>
+                        <li><a class="dropdown-item" href="istambul.html">Istambul</a></li>
+                        <li><a class="dropdown-item" href="diamond.html">Diamond</a></li>
+                        <li><a class="dropdown-item" href="duna.html">Duna</a></li>
+                        <li><a class="dropdown-item" href="native.html">Native</a></li>
+                        <li><a class="dropdown-item" href="santorine.html">Santorine</a></li>
+                        <li><a class="dropdown-item" href="galleria.html">Galleria</a></li>
+                        <li><a class="dropdown-item" href="line.html">Line</a></li>
+                        <li><a class="dropdown-item" href="sensi.html">Sensi</a></li>
+                        <li><a class="dropdown-item" href="mesclato.html">Mesclato</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </a>
+                        <ul class="dropdown-menu logout">
+                        <li><button class="dropdown-item" id="button-logout">Sair</button></li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="form-search ml-5">
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="button-search" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+       <div class="container-lg">
+            <div class="row">
+                <div class="col">
+                    <div class="col  mt-4 justify-content-start align-intems-center">
+                        <i class="bi bi-clipboard-check color-primery icon-detail"></i>
+                        <span class="fs-1" id="vienna">Vienna</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 info shadow-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <span class="fs-4">Rosto<i class="bi bi-pencil-square fs-4 p-2 align-center"></i></span> 
+                            </div>
+                            <div class="col-6">
+                                <span class="fs-4">Banho<i class="bi bi-pencil-square fs-4 p-2 align-center"></i></span> 
+                            </div>
+                            <!--Risco-->
+                            <div class="col-12 my-2">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="container p-0" id="vienna-rosto-list">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Código do Componente</th>
+                                            <th scope="col">Padão</th>
+                                            <th scope="col">Cor</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>                                           
+                                            <td>6308382</td>
+                                            <td>6.1772</td>
+                                            <td>Azul Citadel</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="container p-0" id="vienna-banho-list">                                   
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Código do Componente</th>
+                                                <th scope="col">Padão</th>
+                                                <th scope="col">Cor</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>                                           
+                                                <td>6306621</td>
+                                                <td>7.1647</td>
+                                                <td>Toast</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>                                  
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <button type="button" class="button-default fs-5" id="home-button">Ver todas</button>
+                            </div>
+                        </div>                                                                   
+                    </div>
+                </div>
+            </div>
+            <button class="button-float" data-bs-toggle="modal" data-bs-target="#vienna-modal"><i class="bi bi-plus"></i></button>
+       </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vienna-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Adicione o Conteúdo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="vienna-form">
+                    <div class="modal-body">
+                    
+                        <div class="mb-3">
+                            <label for="value-input" class="form-label">Código do Componente</label>
+                            <input type="number" step="any" class="form-control" id="value-input" aria-describedby="emailHelp" required> 
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pattern-input" class="form-label">Padão</label>
+                            <input type="number" step="any" class="form-control" id="pattern-input" required>                        
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="color-input" class="form-label">Cor</label>
+                            <input type="text" class="form-control" id="color-input" required>   
+                        </div>
+                        
+                        <div class="mb-3 radio">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type-input" id="inlineRadio1" value="4" checked>
+                                <label class="form-check-label" for="inlineRadio1">Rosto</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type-input" id="inlineRadio2" value="5">
+                                <label class="form-check-label" for="inlineRadio2">Banho</label>
+                              </div>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn-secondary button-cancel fs-5" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="button-default fs-5">Adicionar</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
