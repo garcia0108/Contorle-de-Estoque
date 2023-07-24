@@ -24,6 +24,10 @@ header{
     cursor: pointer;
 }
 
+option{
+    text-align: center;  
+}
+
 .artigo:hover > :not(:hover){
     opacity: .4;
     transform: scale(0.9);
